@@ -114,7 +114,8 @@ def main():
         
         if st.session_state.nb_trials == 0 :
             st.session_state.game_over = True
-            st.write(f"Word was : {st.session_state.secret_word}")
+            st.write(f"Word was : {st.session_state.secret_word}. Better luck next time!")
+            st.snow()
             
         if st.session_state.is_word_found:
             st.session_state.game_over = True
