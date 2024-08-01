@@ -119,6 +119,7 @@ def main():
         if st.session_state.is_word_found:
             st.session_state.game_over = True
             st.write("Congratulations! You found the word.")
+            st.balloons()
     
 if __name__ == "__main__":
     main()
